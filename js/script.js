@@ -53,7 +53,7 @@ $(document).ready(function(){
           // RadioButton Age
           else if (checkedRadio == 'age') {
             // Compare by Age
-            if(value.dob.age.search(expression) != -1 ){
+            if((value.dob.age).toString().search(expression) != -1 ){
               // Append content
               $('#result').append(htmlElement);
 
