@@ -33,7 +33,7 @@ $(document).ready(function(){
           +value.dob.age+'</span><button style="float:right;" data-id='+key+' class="btn btn-info">X</button></li>'
 
           // RadioButton Name
-          if(checkedRadio =='name'){
+          if('name' == checkedRadio){
             // Compare by Name
             if (value.name.first.search(expression) != -1 || value.name.last.search(expression) != -1 ){
               // Append content
@@ -42,7 +42,7 @@ $(document).ready(function(){
             }
           }
           // RadioButton Address
-          else if (checkedRadio == 'address') {
+          else if ('address' == checkedRadio) {
             // Compare by Address
             if (value.location.street.search(expression) != -1){
               // Append content
@@ -51,7 +51,7 @@ $(document).ready(function(){
             }
           }
           // RadioButton Age
-          else if (checkedRadio == 'age') {
+          else if ('age' == checkedRadio) {
             // Compare by Age
             if((value.dob.age).toString().search(expression) != -1 ){
               // Append content
